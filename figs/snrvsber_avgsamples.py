@@ -109,7 +109,7 @@ theoryBer = 0.5*special.erfc(np.sqrt(10.0**(Eb_N0_dB/10.0)))
 # Plotting the data
 plt.semilogy(Eb_N0_dB,theoryBer,'y')    
 plt.semilogy(Eb_N0_dB,BER_sim[0],'k',Eb_N0_dB,BER_sim[1],'g',Eb_N0_dB,BER_sim[2],'r',Eb_N0_dB,BER_sim[3],'m',Eb_N0_dB,BER_sim[4],'c') 
-plt.title("Timing Sync using Gardner TED")
+#plt.title("Timing Sync using Gardner TED")
 plt.legend(['Theory','p=%d'%previous_samples[0],'p=%d'%previous_samples[1],'p=%d'%previous_samples[2],'p=%d'%previous_samples[3],'p=%d'%previous_samples[4]],loc='best')
 plt.xlabel('$\\frac{Eb}{N0}$(dB)')
 plt.ylabel('$P_e$')

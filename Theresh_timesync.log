@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2018.1.31)  5 APR 2019 12:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2018.1.31)  5 APR 2019 12:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -483,6 +483,12 @@ LaTeX Warning: Label `fig:freq_best' multiply defined.
 
 LaTeX Warning: Label `fig:freq_est' multiply defined.
 
+
+LaTeX Warning: Label `fig:freq_best' multiply defined.
+
+
+LaTeX Warning: Label `fig:freq_est' multiply defined.
+
 )
 \openout1 = `Theresh_timesync.aux'.
 
@@ -598,10 +604,7 @@ File: ./figs/Different_timeoffsets_snrvsber.eps Graphic file (type eps)
  <./figs/Different_timeoffsets_snrvsber.eps>
 File: ./figs/frequencyestiamtion_best_error_vs_snr.eps Graphic file (type eps)
 
-<./figs/frequencyestiamtion_best_error_vs_snr.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1
+<./figs/frequencyestiamtion_best_error_vs_snr.eps> [1
 
 
 ]
@@ -613,7 +616,18 @@ File: ./figs/frequency_best.eps Graphic file (type eps)
 <./figs/frequency_best.eps>
 File: ./figs/frequencyestiamtion_best_error_vs_snr.eps Graphic file (type eps)
  <./figs/frequencyestiamtion_best_error_vs_snr.eps>
-[2] (./Theresh_timesync.aux)
+Underfull \vbox (badness 2334) has occurred while \output is active []
+
+File: ./figs/Phase_error_with_respect_to_pilots.eps Graphic file (type eps)
+
+<./figs/Phase_error_with_respect_to_pilots.eps>
+File: ./figs/Phase_error_with_respect_to_SNR_fixed_pilot.eps Graphic file (type
+ eps)
+
+<./figs/Phase_error_with_respect_to_SNR_fixed_pilot.eps> [2] [3
+
+]
+(./Theresh_timesync.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -622,12 +636,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7330 strings out of 493305
- 108147 string characters out of 6139897
- 202086 words of memory out of 5000000
- 10659 multiletter control sequences out of 15000+600000
+ 7334 strings out of 493305
+ 108331 string characters out of 6139897
+ 203086 words of memory out of 5000000
+ 10661 multiletter control sequences out of 15000+600000
  62210 words of font info for 151 fonts, out of 8000000 for 9000
  960 hyphenation exceptions out of 8191
  36i,9n,49p,250b,314s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Theresh_timesync.dvi (2 pages, 8932 bytes).
+Output written on Theresh_timesync.dvi (3 pages, 9724 bytes).
