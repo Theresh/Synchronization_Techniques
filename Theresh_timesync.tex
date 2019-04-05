@@ -261,8 +261,11 @@ where $X_k$ is the transmitted symbol in the $k$th time slot and $V_k(m) \sim \m
 The decision variable for the $k$th symbol 
 is \cite{2}
 \begin{align}
-U_k&=Y_{k-1}\brak{\frac{M}{2}}\sbrak{Y_{k}\brak{M}-Y_{k-1}\brak{M}}
-\end{align}
+U_k&=\frac{1}{N}\sum^{N}_{i=1}Y_{k-i}\brak{\frac{M}{2}}\brak{Y_{k-i+1}\brak{M}-Y_{k-i}\brak{M}}
+\end{align} Where N is the previous symbol knowledge for averaging.
+%\begin{align}
+%U_k&=Y_{k-1}\brak{\frac{M}{2}}\sbrak{Y_{k}\brak{M}-Y_{k-1}\brak{M}}
+%\end{align}
 %
 \subsection{Plots}
 \begin{figure}
