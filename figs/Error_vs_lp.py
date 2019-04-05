@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+"""
+
+@authors : Raktim Goswami, Abhisek Bairagi
+"""
 import numpy as np 
 import matplotlib.pyplot as plt 
 import cmath

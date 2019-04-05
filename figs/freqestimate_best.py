@@ -1,6 +1,8 @@
-#Code for large frequency offset estimation
-#we have plot error vs frequency offset for snr =5.
+# -*- coding: utf-8 -*-
+"""
 
+@authors : Sai Manasa Pappu , Siddharth Mourya
+"""
 import numpy as np 
 import scipy
 import math

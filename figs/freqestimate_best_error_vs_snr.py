@@ -1,4 +1,8 @@
-#this code is for exact practical values .for large frequency offset estimation
+# -*- coding: utf-8 -*-
+"""
+
+@authors : Sai Manasa Pappu , Siddharth Mourya
+"""
 
 import numpy as np 
 import scipy
