@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2018.1.31)  5 APR 2019 11:59
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2018.1.31)  5 APR 2019 12:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -476,14 +476,20 @@ File: lstlang1.sty 2013/08/26 1.5b listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
 )
-(./Theresh_timesync.aux)
+(./Theresh_timesync.aux
+
+LaTeX Warning: Label `fig:freq_best' multiply defined.
+
+
+LaTeX Warning: Label `fig:freq_est' multiply defined.
+
+)
 \openout1 = `Theresh_timesync.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 112.
 LaTeX Font Info:    Try loading font information for OML+txmi on input line 112
 .
-
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 112.
@@ -588,35 +594,40 @@ File: utxsyc.fd 2000/12/15 v3.1
 \tf@toc=\write3
 \openout3 = `Theresh_timesync.toc'.
 
+File: ./figs/Different_timeoffsets_snrvsber.eps Graphic file (type eps)
+ <./figs/Different_timeoffsets_snrvsber.eps>
+File: ./figs/frequencyestiamtion_best_error_vs_snr.eps Graphic file (type eps)
+
+<./figs/frequencyestiamtion_best_error_vs_snr.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
 
 
-LaTeX Warning: Reference `fig: freq_est' on page 1 undefined on input line 313.
+]
+
+LaTeX Warning: Reference `fig: freq_est' on page 2 undefined on input line 329.
 
 
 File: ./figs/frequency_best.eps Graphic file (type eps)
 <./figs/frequency_best.eps>
 File: ./figs/frequencyestiamtion_best_error_vs_snr.eps Graphic file (type eps)
  <./figs/frequencyestiamtion_best_error_vs_snr.eps>
-[1
-
-
-] [2
-
-] (./Theresh_timesync.aux)
+[2] (./Theresh_timesync.aux)
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7328 strings out of 493305
- 108072 string characters out of 6139897
- 204086 words of memory out of 5000000
- 10658 multiletter control sequences out of 15000+600000
+ 7330 strings out of 493305
+ 108147 string characters out of 6139897
+ 202086 words of memory out of 5000000
+ 10659 multiletter control sequences out of 15000+600000
  62210 words of font info for 151 fonts, out of 8000000 for 9000
  960 hyphenation exceptions out of 8191
  36i,9n,49p,250b,314s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Theresh_timesync.dvi (2 pages, 8328 bytes).
+Output written on Theresh_timesync.dvi (2 pages, 8932 bytes).
