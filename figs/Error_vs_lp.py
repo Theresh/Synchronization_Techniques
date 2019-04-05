@@ -44,8 +44,8 @@ x=np.random.randint(0,2,N)
 mx=np.subtract(np.multiply(x,2),1)
 qpsk = qpsk1(N,mx)
 #print qpsk.shape
-lp = 36
-es = 1
+lp = 18
+es = 10
 n0 = np.sqrt(0.5*(10.0**(-1/10.0)))
 sigma = 1.0/(2*lp*lp*es/n0)
 noise=np.random.normal(0,sigma,N/2)+1j*np.random.normal(0,sigma,N/2)
@@ -81,7 +81,8 @@ theta1 = (phi_m-theta)**2
 x1 = np.linspace(0,theta1.shape[0],theta1.shape[0])
 plt.plot(x1,theta1)
 plt.xlabel('$P$')
-plt.ylabel('$Squared$ $phase$ $error$')
+plt.ylabel('$(\Delta \phi - \hat{\Delta \phi})^2$')
+plt.legend(['$\\frac{E_s}{N_0}=%d$dB'%es],loc='best')#plt.ylabel('$Squared$ $phase$ $error$')
 plt.grid(True)
 plt.savefig("./Phase_error_with_respect_to_pilots.eps")
 plt.show()

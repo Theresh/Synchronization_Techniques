@@ -71,7 +71,7 @@ for t in range (10,10+Nsnr):
 
 	############### Applying Second step of the algorithm ##############################
 
-	alpha = 1
+	alpha = 0.5
 	theta = np.zeros([lp,])
 	for i in range(1,theta_hat.shape[0]):
 		theta[i] = theta[i-1] + alpha*saw(theta_hat[i]-theta[i-1])
@@ -84,8 +84,8 @@ phi_m[0:] = phi
 theta1 = (phi_m-out)**2
 x1 = np.linspace(0,theta1.shape[0]-1,theta1.shape[0])
 plt.semilogy(x1,theta1)
-plt.xlabel('$\\frac{Eb}{N0}$(dB)')
-plt.ylabel('$Error$')
+plt.xlabel('$\\frac{E_s}{N_0}$ dB')
+plt.ylabel('$(\Delta \phi - \hat{\Delta \phi})^2$')
 plt.legend(['P=%d'%lp],loc='best')
 plt.grid(True)
 plt.savefig("./Phase_error_with_respect_to_SNR_fixed_pilot.eps")
