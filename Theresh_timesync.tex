@@ -270,17 +270,25 @@ U_k&=Y_{k-1}\brak{\frac{M}{2}}\sbrak{Y_{k}\brak{M}-Y_{k-1}\brak{M}}
 \begin{center}
 \includegraphics[width=\columnwidth]{./figs/Different_timeoffsets_snrvsber.eps}
 \end{center}
-\caption{SNR VS BER with different time offsets}
-\label{fig:freq_best}
+\caption{snr vs ber with different time offsets}
+\label{fig:difftoff}
 \end{figure}
 %
-\begin{figure}
-\begin{center}
-\includegraphics[width=\columnwidth]{./figs/frequencyestiamtion_best_error_vs_snr.eps}
-\end{center}
-\caption{$\Delta f = 5$ MHz}
-\label{fig:freq_est}
-\end{figure}
+%\begin{figure}
+%\begin{center}
+%\includegraphics[width=\columnwidth]{./figs/frequencyestiamtion_best_error_vs_snr.eps}
+%\end{center}
+%\caption{$\Delta f = 5$ MHz}
+%\label{fig:freq_est}
+%\end{figure}
+
+%
+The codes for generating the plots are available at
+
+Fig. \ref{fig:difftoff} shows the variation of the bit error rate respect to the snr with different timing offsets.
+$\Delta f$ when the SNR = 10 dB.  Similarly Fig. \ref{fig:difftoff} shows the variation of the error with 
+respect 
+to the SNR .
 
 \section{Frequency Offset: LR Technique}
 %There are two parts.
@@ -322,13 +330,6 @@ MHz.
 %
 where $P$ is the number of pilot symbols.
 \subsection{Plots}
-%
-The number of pilot symbols is $P = 18$. The codes for generating the plots are available at
-
-Fig. \ref{fig:freq_best} shows the variation of the error in the offset estimate with respect to the offset 
-$\Delta f$ when the SNR = 10 dB.  Similarly Fig. \ref{fig: freq_est} shows the variation of the error with 
-respect 
-to the SNR for $\Delta f = 5 MHz$.
 \begin{figure}
 \begin{center}
 \includegraphics[width=\columnwidth]{./figs/frequency_best.eps}
@@ -341,9 +342,17 @@ to the SNR for $\Delta f = 5 MHz$.
 \begin{center}
 \includegraphics[width=\columnwidth]{./figs/frequencyestiamtion_best_error_vs_snr.eps}
 \end{center}
-\caption{$\Delta f = 5$ MHz}
+\caption{$\Delta f = 5$ MHz, Center frequency $f_c=25$ GHz}
 \label{fig:freq_est}
 \end{figure}
+
+%
+The number of pilot symbols is $P = 18$. The codes for generating the plots are available at
+
+Fig. \ref{fig:freq_best} shows the variation of the error in the offset estimate with respect to the offset 
+$\Delta f$ when the SNR = 10 dB.  Similarly Fig. \ref{fig: freq_est} shows the variation of the error with 
+respect 
+to the SNR for $\Delta f = 5 MHz$.
 
 
 \section{Phase Offset: Feed Forward Maximum Likelihood (FFML)technique}
@@ -356,13 +365,13 @@ Let the phase offset be
 $\Delta\phi$  \cite{1}.  Then
 \begin{equation}
 \label{eq:phase_offset_model}
-Y_k= X_k e^{j2\pi\Delta \phi kM} + V_k, \quad k = 1,\dots,N 
+Y_k= X_k e^{j\phi} + V_k, \quad k = 1,\dots,N 
 \end{equation}  
 From \eqref{eq:phase_offset_model},
 %
 \begin{align}
-Y_kX_k^*&= \abs{X_k}^2e^{j2\pi\Delta \phi kM}+ X_k^*{V}_k\\
-\implies r_k&=e^{j2\pi\Delta \phi kM}+ \bar{V}_k
+Y_kX_k^*&= \abs{X_k}^2e^{j \phi}+ X_k^*{V}_k\\
+\implies r_k&=e^{j\phi}+ \bar{V}_k
 \end{align}
 where
 \begin{align}
@@ -381,12 +390,13 @@ This equation gives the final estimation of phase
  Where SAW is a saw tooth non-linearity and $\alpha$ $<=1$
  
 \subsection{Plots}
+
 \begin{figure}
 \begin{center}
 \includegraphics[width=\columnwidth]{./figs/Phase_error_with_respect_to_pilots.eps}
 \end{center}
-\caption{Error variation with respect to frequency offset.  }
-\label{fig:freq_best}
+\caption{Phase error variation with respect to pilot symbols }
+\label{fig:phaseerrorp}
 \end{figure}
 %
 \begin{figure}
@@ -394,8 +404,15 @@ This equation gives the final estimation of phase
 \includegraphics[width=\columnwidth]{./figs/Phase_error_with_respect_to_SNR_fixed_pilot.eps}
 \end{center}
 \caption{$\Delta f = 5$ MHz}
-\label{fig:freq_est}
+\label{fig:phaseerrorsnr}
 \end{figure}
+%
+The number of pilot symbols is $P = 18$. The codes for generating the plots are available at
+
+Fig. \ref{fig:phaseerrorp} shows the variation of the error in the offset estimate with respect to the offset 
+$\Delta f$ when the SNR = 10 dB.  Similarly Fig. \ref{fig:phaseerrorsnr} shows the variation of the error with 
+respect 
+to the SNR for $\Delta f = 5 MHz$.
 
 \begin{thebibliography}{20}
 \bibitem{1}
